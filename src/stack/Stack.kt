@@ -5,13 +5,18 @@ class Stack {
     var elements = IntArray(5)
     var currentIndex = 0
 
-    fun pushElement(element: Int){
+    fun pushElement(element: Int) : Int{
+        if (currentIndex == elements.size){
+            return -1
+        }
         elements[currentIndex] = element
         currentIndex++
+
+        return 0
     }
 
     fun popElement() : Int {
-        if (currentIndex == 0){
+        if (isEmpty()){
             return -1
         }
 
@@ -22,10 +27,18 @@ class Stack {
         return poppedElement
     }
 
-    fun peekElement() : Int {
-        return 0
+    //top element..
+    fun topElement() : Int {
+        return elements[currentIndex-1]
     }
 
+    //check for isEmpty..
+    fun isEmpty() : Boolean {
+        if (currentIndex == 0){
+            return true
+        }
+        return false
+    }
 
 }
 
@@ -47,5 +60,7 @@ fun main() {
     for (element in stack.elements){
         println(element)
     }
+
+    println("---top element----"+stack.topElement())
 
 }
