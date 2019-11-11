@@ -18,7 +18,9 @@ fun main() {
     //println("No. of nodes: ${noOfNodes(root)}")
     //levelWisePrint(takeInputLevelwise())
 
-    println(height(takeInputLevelwise()))
+    //println(height(takeInputLevelwise()))
+    println(printAtlevelk(takeInputLevelwise(),2))
+
 }
 
 fun height(root: TreeNode) : Int{
@@ -34,6 +36,19 @@ fun height(root: TreeNode) : Int{
         }
     }
     return root.maxHeight + 1
+}
+
+fun printAtlevelk(root: TreeNode, k: Int){
+    if (root == null){
+        return
+    }
+    if (k==0){
+        println(root.data)
+    }
+
+    for (i in 0 until root.children.size){
+        printAtlevelk(root.children[i],k-1)
+    }
 }
 
 fun printTree(root: TreeNode) {
