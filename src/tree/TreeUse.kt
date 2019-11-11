@@ -15,8 +15,25 @@ fun main() {
     printTree(root)
 
     //no. of nodes..
-    println("No. of nodes: ${noOfNodes(root)}")
+    //println("No. of nodes: ${noOfNodes(root)}")
     //levelWisePrint(takeInputLevelwise())
+
+    println(height(takeInputLevelwise()))
+}
+
+fun height(root: TreeNode) : Int{
+    if (root == null){
+        return 0
+    }
+    else{
+        for (i in 0 until root.children.size){
+            var height = height(root.children[i])
+            if (height > root.maxHeight){
+                root.maxHeight = height
+            }
+        }
+    }
+    return root.maxHeight + 1
 }
 
 fun printTree(root: TreeNode) {
