@@ -12,15 +12,34 @@ fun main() {
     root.children.add(node1)
     root.children.add(node2)
 
-    printTree(root)
+    //printTree(root)
 
     //no. of nodes..
     //println("No. of nodes: ${noOfNodes(root)}")
     //levelWisePrint(takeInputLevelwise())
 
     //println(height(takeInputLevelwise()))
-    println(printAtlevelk(takeInputLevelwise(),2))
+    //println(printAtlevelk(takeInputLevelwise(),2))
+    println(noOfleafNodes(takeInputLevelwise()))
+}
 
+//TODO
+fun noOfleafNodes(root: TreeNode) : Int{
+    if (root == null){
+        return 0
+    }
+    if(root.children.size==0){
+        return root.noOfleafnode
+    }
+    else{
+        for (i in 0 until root.children.size){
+            if (root.children[i].children.size==0){
+               println("${root.children[i].data}:${root.noOfleafnode++}")
+           }
+            noOfleafNodes(root.children[i])
+        }
+    }
+    return root.noOfleafnode
 }
 
 fun height(root: TreeNode) : Int{
