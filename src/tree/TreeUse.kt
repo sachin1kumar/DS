@@ -20,26 +20,50 @@ fun main() {
 
     //println(height(takeInputLevelwise()))
     //println(printAtlevelk(takeInputLevelwise(),2))
-    println(noOfleafNodes(takeInputLevelwise()))
+    //println(noOfleafNodes(takeInputLevelwise()))
+    println(postOrdertraversal(takeInputLevelwise()))
 }
 
-//TODO
+fun preOrdertraversal(root: TreeNode){
+    if (root == null){
+        return
+    }
+    print(root.data)
+    print(" ")
+
+    for (i in 0 until root.children.size){
+        preOrdertraversal(root.children[i])
+    }
+}
+
+fun postOrdertraversal(root: TreeNode){
+    if (root == null){
+        return
+    }
+
+    for (i in 0 until root.children.size){
+        postOrdertraversal(root.children[i])
+    }
+
+    print(root.data)
+    print(" ")
+}
+
 fun noOfleafNodes(root: TreeNode) : Int{
+    var count = 0
+
     if (root == null){
         return 0
     }
     if(root.children.size==0){
-        return root.noOfleafnode
+        return 1
     }
     else{
         for (i in 0 until root.children.size){
-            if (root.children[i].children.size==0){
-               println("${root.children[i].data}:${root.noOfleafnode++}")
-           }
-            noOfleafNodes(root.children[i])
+           count += noOfleafNodes(root.children[i])
         }
     }
-    return root.noOfleafnode
+    return count
 }
 
 fun height(root: TreeNode) : Int{
