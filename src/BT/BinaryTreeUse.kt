@@ -11,7 +11,8 @@ fun main() {
     root.left = nodeLeft
     root.right = nodeRight
 
-    print(countNodes(takeInputLevelwise()))
+    //print(countNodes(takeInputLevelwise()))
+    print(findNode(takeInputLevelwise(),nodeLeft))
 }
 
 fun printBT(root: BinaryTree?){
@@ -120,4 +121,16 @@ fun countNodes(root: BinaryTree?) : Int{
     }
 
     return count
+}
+
+fun findNode(root: BinaryTree?,node: BinaryTree?) : Boolean {
+    if (root == null || node==null){
+        return false
+    }
+
+    if (root.data == node.data){
+        return true
+    }
+
+    return findNode(root.left,node) || findNode(root.right,node)
 }
