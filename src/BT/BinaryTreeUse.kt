@@ -7,29 +7,71 @@ fun main() {
     var nodeLeft = BinaryTree(2)
     var nodeRight = BinaryTree(3)
 
+    var intArray = intArrayOf(1,2,3,4,5,6)
+
     root.left = nodeLeft
     root.right = nodeRight
 
     //print(countNodes(takeInputLevelwise()))
-    print(searchBT(takeInputLevelwise(),nodeLeft.data))
+    //print(searchBST(takeInputLevelwise(),nodeLeft.data))
+    //printRangeBST(takeInputLevelwise(),2,5)
+    levelWisePrint(createBSTfromArray(intArray,0,5))
 }
 
-fun searchBT(root: BinaryTree?, data: Int) : BinaryTree? {
+fun createBSTfromArray(intArray: IntArray, si: Int, ei: Int): BinaryTree? {
+    if (intArray.size == 0){
+        return null
+    }
+
+    if (si == 0 && ei == 0){
+        var root = BinaryTree(intArray[si])
+        return root
+    }
+
+    var mid: Int = ( si + ei ) / 2
+
+    var root = BinaryTree(intArray[mid])
+    root.left = createBSTfromArray(intArray,si,mid-1)
+    root.right = createBSTfromArray(intArray,mid+1,ei)
+    return root
+}
+
+fun searchBST(root: BinaryTree?, data: Int) : BinaryTree? {
     if(root == null){
         return null
     }
 
-    if (data == root.data){
+    if(data == root.data){
         return root
     }
 
-    if (data < root.data){
-        return searchBT(root.left,data)
+    if(data < root.data){
+        return searchBST(root.left,data)
     }
     else {
-        return searchBT(root.right,data)
+        return searchBST(root.right,data)
     }
 }
+
+
+fun printRangeBST(root: BinaryTree?, k1: Int, k2: Int){
+    if (root == null){
+        return
+    }
+
+    if (k1 < root.data){
+        printRangeBST(root.left,k1,k2)
+    }
+
+    if (k1 <= root.data && k2 >= root.data){
+        print("${root.data} ")
+    }
+
+    if (k2 > root.data){
+        printRangeBST(root.right,k1,k2)
+    }
+}
+
 
 fun printBT(root: BinaryTree?){
     if (root==null){
