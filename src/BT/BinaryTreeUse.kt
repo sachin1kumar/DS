@@ -1,6 +1,5 @@
 package BT
 
-import tree.TreeNode
 import java.util.*
 
 fun main() {
@@ -12,7 +11,24 @@ fun main() {
     root.right = nodeRight
 
     //print(countNodes(takeInputLevelwise()))
-    print(findNode(takeInputLevelwise(),nodeLeft))
+    print(searchBT(takeInputLevelwise(),nodeLeft.data))
+}
+
+fun searchBT(root: BinaryTree?, data: Int) : BinaryTree? {
+    if(root == null){
+        return null
+    }
+
+    if (data == root.data){
+        return root
+    }
+
+    if (data < root.data){
+        return searchBT(root.left,data)
+    }
+    else {
+        return searchBT(root.right,data)
+    }
 }
 
 fun printBT(root: BinaryTree?){
