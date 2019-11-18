@@ -7,7 +7,7 @@ fun main() {
     var nodeLeft = BinaryTree(2)
     var nodeRight = BinaryTree(3)
 
-    var intArray = intArrayOf(1,2,3,4,5,6)
+    var intArray = intArrayOf(1,2,3,4,5,6,7)
 
     root.left = nodeLeft
     root.right = nodeRight
@@ -15,22 +15,18 @@ fun main() {
     //print(countNodes(takeInputLevelwise()))
     //print(searchBST(takeInputLevelwise(),nodeLeft.data))
     //printRangeBST(takeInputLevelwise(),2,5)
-    levelWisePrint(createBSTfromArray(intArray,0,5))
+    levelWisePrint(createBSTfromArray(intArray,0,intArray.size-1))
 }
 
 fun createBSTfromArray(intArray: IntArray, si: Int, ei: Int): BinaryTree? {
-    if (intArray.size == 0){
-        return null
-    }
 
-    if (si == 0 && ei == 0){
-        var root = BinaryTree(intArray[si])
-        return root
+    if (si > ei){
+       return null
     }
 
     var mid: Int = ( si + ei ) / 2
-
     var root = BinaryTree(intArray[mid])
+
     root.left = createBSTfromArray(intArray,si,mid-1)
     root.right = createBSTfromArray(intArray,mid+1,ei)
     return root
