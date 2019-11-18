@@ -1,5 +1,6 @@
 package BT
 
+import linkedlist.Node
 import java.util.*
 
 fun main() {
@@ -15,7 +16,41 @@ fun main() {
     //print(countNodes(takeInputLevelwise()))
     //print(searchBST(takeInputLevelwise(),nodeLeft.data))
     //printRangeBST(takeInputLevelwise(),2,5)
-    levelWisePrint(createBSTfromArray(intArray,0,intArray.size-1))
+    //levelWisePrint(createBSTfromArray(intArray,0,intArray.size-1))
+    printLL(createLLfromBST(takeInputLevelwise()))
+}
+
+fun printLL(createLLfromBST: Node?) {
+    var next = createLLfromBST
+    while (next!=null){
+        print("${next?.data} ")
+        next = next?.next
+    }
+}
+
+
+fun createLLfromBST(root: BinaryTree?) : Node? {
+    if(root == null){
+        return null
+    }
+
+    var left = createLLfromBST(root.left)
+    var head = left
+    var tail: Node? = null
+    while (left != null){
+        tail = left
+        left = left?.next
+    }
+
+    //create root node.
+    var rootNode = Node(root.data)
+
+    tail?.next = rootNode
+
+    var right = createLLfromBST(root.right)
+    rootNode.next = right
+
+    return head
 }
 
 fun createBSTfromArray(intArray: IntArray, si: Int, ei: Int): BinaryTree? {
