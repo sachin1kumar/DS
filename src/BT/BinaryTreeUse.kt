@@ -2,6 +2,7 @@ package BT
 
 import linkedlist.Node
 import java.util.*
+import kotlin.collections.ArrayList
 
 fun main() {
     var root = BinaryTree(1)
@@ -18,9 +19,47 @@ fun main() {
     //printRangeBST(takeInputLevelwise(),2,5)
     //levelWisePrint(createBSTfromArray(intArray,0,intArray.size-1))
     var inputRoot = takeInputLevelwise()
-    createLLfromBST(inputRoot)
-    inOrderTravel(inputRoot)
+    //createLLfromBST(inputRoot)
+    //inOrderTravel(inputRoot)
+
+    printPath(rootNodepath(inputRoot,7))
 }
+
+fun printPath(list: ArrayList<Int?>?){
+
+    for (data in 0 until list?.size!!){
+        println(list.get(data))
+    }
+}
+
+fun rootNodepath(root: BinaryTree?, data: Int): ArrayList<Int?>? {
+
+    if (root == null){
+        return null
+    }
+
+    if (root.data == data){
+        var list = ArrayList<Int?>()
+        list.add(root.data)
+        return list
+    }
+
+    var left = rootNodepath(root.left,data)
+    if (left!=null){
+        left.add(root.data)
+        return left
+    }
+
+    var right = rootNodepath(root.right,data)
+    if (right!=null){
+        right.add(root.data)
+        return right
+    }
+    else{
+        return null
+    }
+}
+
 
 fun inOrderTravel(inputRoot: BinaryTree?) {
     if (inputRoot == null){
