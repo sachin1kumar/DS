@@ -38,8 +38,10 @@ fun insertNodeAtPosition(llist: Node?, data: Int, position: Int): Node? {
 
     var pos = 0
     var pointer: Node? = llist
+    var prev: Node? = null
 
     while(pos < position){
+        prev = pointer
         pointer = pointer?.next
         pos++
     }
@@ -47,11 +49,11 @@ fun insertNodeAtPosition(llist: Node?, data: Int, position: Int): Node? {
     val temp = pointer
 
     val newList = Node(data)
-    pointer = newList
+    prev?.next = newList
     //println(pointer.data)
     //println(temp?.data)
 
-    pointer?.next = temp
+    newList?.next = temp
     //println(pointer?.next?.data)
 
 
