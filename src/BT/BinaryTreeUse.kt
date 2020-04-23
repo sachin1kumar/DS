@@ -1,13 +1,12 @@
 package BT
 
-import linkedlist.Node
 import java.util.*
 import kotlin.collections.ArrayList
 
 fun main() {
-    var root = BinaryTree(1)
-    var nodeLeft = BinaryTree(2)
-    var nodeRight = BinaryTree(3)
+    var root = BinaryTreeJava(1)
+    var nodeLeft = BinaryTreeJava(2)
+    var nodeRight = BinaryTreeJava(3)
 
     var intArray = intArrayOf(1,2,3,4,5,6,7)
 
@@ -32,7 +31,7 @@ fun printPath(list: ArrayList<Int?>?){
     }
 }
 
-fun rootNodepath(root: BinaryTree?, data: Int): ArrayList<Int?>? {
+fun rootNodepath(root: BinaryTreeJava?, data: Int): ArrayList<Int?>? {
 
     if (root == null){
         return null
@@ -61,7 +60,7 @@ fun rootNodepath(root: BinaryTree?, data: Int): ArrayList<Int?>? {
 }
 
 
-fun inOrderTravel(inputRoot: BinaryTree?) {
+fun inOrderTravel(inputRoot: BinaryTreeJava?) {
     if (inputRoot == null){
         return
     }
@@ -74,7 +73,7 @@ fun inOrderTravel(inputRoot: BinaryTree?) {
 }
 
 
-fun createLLfromBST(root: BinaryTree?) {
+fun createLLfromBST(root: BinaryTreeJava?) {
     if(root == null || root?.left ==null && root?.right ==null){
         return
     }
@@ -97,21 +96,21 @@ fun createLLfromBST(root: BinaryTree?) {
     createLLfromBST(root?.right)
 }
 
-fun createBSTfromArray(intArray: IntArray, si: Int, ei: Int): BinaryTree? {
+fun createBSTfromArray(intArray: IntArray, si: Int, ei: Int): BinaryTreeJava? {
 
     if (si > ei){
        return null
     }
 
     var mid: Int = ( si + ei ) / 2
-    var root = BinaryTree(intArray[mid])
+    var root = BinaryTreeJava(intArray[mid])
 
     root.left = createBSTfromArray(intArray,si,mid-1)
     root.right = createBSTfromArray(intArray,mid+1,ei)
     return root
 }
 
-fun searchBST(root: BinaryTree?, data: Int) : BinaryTree? {
+fun searchBST(root: BinaryTreeJava?, data: Int) : BinaryTreeJava? {
     if(root == null){
         return null
     }
@@ -129,7 +128,7 @@ fun searchBST(root: BinaryTree?, data: Int) : BinaryTree? {
 }
 
 
-fun printRangeBST(root: BinaryTree?, k1: Int, k2: Int){
+fun printRangeBST(root: BinaryTreeJava?, k1: Int, k2: Int){
     if (root == null){
         return
     }
@@ -148,7 +147,7 @@ fun printRangeBST(root: BinaryTree?, k1: Int, k2: Int){
 }
 
 
-fun printBT(root: BinaryTree?){
+fun printBT(root: BinaryTreeJava?){
     if (root==null){
         return
     }
@@ -168,7 +167,7 @@ fun printBT(root: BinaryTree?){
     printBT(root.right)
 }
 
-fun takeInputLevelwise(): BinaryTree? {
+fun takeInputLevelwise(): BinaryTreeJava? {
     println("Enter root data:")
     var rootData = Scanner(System.`in`).nextInt()
 
@@ -176,9 +175,9 @@ fun takeInputLevelwise(): BinaryTree? {
         return null
     }
 
-    var root = BinaryTree(rootData)
+    var root = BinaryTreeJava(rootData)
 
-    var queue: Queue<BinaryTree> = ArrayDeque<BinaryTree>()
+    var queue: Queue<BinaryTreeJava> = ArrayDeque<BinaryTreeJava>()
     queue.add(root)
 
     while (queue.size != 0) {
@@ -190,7 +189,7 @@ fun takeInputLevelwise(): BinaryTree? {
         println("Enter left child data of ${front.data}")
         var left = Scanner(System.`in`).nextInt()
         if (left!=-1) {
-            var leftChild = BinaryTree(left)
+            var leftChild = BinaryTreeJava(left)
             front.left = leftChild
 
             // add to queue..
@@ -200,7 +199,7 @@ fun takeInputLevelwise(): BinaryTree? {
         println("Enter right child data of ${front.data}")
         var right = Scanner(System.`in`).nextInt()
         if (right!=-1) {
-            var rightChild = BinaryTree(right)
+            var rightChild = BinaryTreeJava(right)
             front.right = rightChild
 
             // add to queue..
@@ -211,8 +210,8 @@ fun takeInputLevelwise(): BinaryTree? {
     return root
 }
 
-fun levelWisePrint(root: BinaryTree?){
-    var queue: Queue<BinaryTree> = ArrayDeque<BinaryTree>()
+fun levelWisePrint(root: BinaryTreeJava?){
+    var queue: Queue<BinaryTreeJava> = ArrayDeque<BinaryTreeJava>()
     queue.add(root)
 
     while (queue.size!=0) {
@@ -244,7 +243,7 @@ fun levelWisePrint(root: BinaryTree?){
 
 }
 
-fun countNodes(root: BinaryTree?) : Int{
+fun countNodes(root: BinaryTreeJava?) : Int{
     var count = 1
     if (root == null){
         return 0
@@ -256,7 +255,7 @@ fun countNodes(root: BinaryTree?) : Int{
     return count
 }
 
-fun findNode(root: BinaryTree?,node: BinaryTree?) : Boolean {
+fun findNode(root: BinaryTreeJava?, node: BinaryTreeJava?) : Boolean {
     if (root == null || node==null){
         return false
     }

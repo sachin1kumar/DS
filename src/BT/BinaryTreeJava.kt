@@ -2,8 +2,8 @@ package BT
 
 class BinaryTree {
     var data : Int = 0
-    var left: BinaryTree?
-    var right: BinaryTree?
+    var left: BinaryTreeJava?
+    var right: BinaryTreeJava?
 
     constructor(data: Int){
         this.data = data
