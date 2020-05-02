@@ -13,7 +13,7 @@ public class SumTree {
 
     }
 
-    public static ArrayList<Integer> sumTree(BinaryTreeJava root){
+    public static ArrayList<Integer> sumTree(BinaryTree root){
         /* Your class should be named Solution
          * Don't write main().
          * Don't read input, they are passed as function arguments.
@@ -21,50 +21,50 @@ public class SumTree {
          * Taking input and printing output is handled automatically.
          */
 
-        BinaryTreeJava nroot = update(root);
+        BinaryTree nroot = update(root);
         list = new ArrayList<Integer>();
         return travel(nroot);
     }
 
-    public static ArrayList<Integer> travel(BinaryTreeJava root){
+    public static ArrayList<Integer> travel(BinaryTree root){
         if(root == null){
             return list;
         }
 
         if(root != null){
-            list.add(root.data);
-            travel(root.left);
-            travel(root.right);
+            list.add(root.getData());
+            travel(root.getLeft());
+            travel(root.getRight());
         }
 
         return list;
     }
 
 
-    public static BinaryTreeJava update(BinaryTreeJava root) {
+    public static BinaryTree update(BinaryTree root) {
 
         if(root == null){
             return null;
         }
 
-        if(root.left == null && root.right != null){
-            root.data = root.right.data;
+        if(root.getLeft() == null && root.getRight() != null){
+            root.setData(root.getRight().getData());
         }
 
-        if(root.right == null && root.left != null){
-            root.data = root.left.data;
+        if(root.getLeft() == null && root.getLeft() != null){
+            root.setData(root.getLeft().getData());
         }
 
-        if(root.left == null && root.right == null){
-            root.data = 0;
+        if(root.getLeft() == null && root.getRight() == null){
+            root.setData(0);
         }
 
-        if (root.left != null && root.right!=null) {
-            root.data = root.left.data + root.right.data;
+        if (root.getLeft() != null && root.getRight()!=null) {
+            root.setData(root.getLeft().getData() + root.getRight().getData());
         }
 
-        update(root.left);
-        update(root.right);
+        update(root.getLeft());
+        update(root.getRight());
 
         return root;
 
