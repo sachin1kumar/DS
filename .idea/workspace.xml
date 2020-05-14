@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="570879d4-de7e-433a-bf83-d3c08544f973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BT/Ancestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BT/FindLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BT/MaximumSumPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BT/MinDepth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/Distinct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BT/MaxIncPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS/BT/DeepestLeftLeaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS/BT/DeepestLeftLeaf.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.Distinct">
-    <configuration name="Ancestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT.Ancestor" />
-      <module name="DS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MaxIncPath">
     <configuration name="Distinct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.Distinct" />
       <module name="DS" />
@@ -69,6 +51,19 @@
     </configuration>
     <configuration name="FindLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BT.FindLevel" />
+      <module name="DS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxIncPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BT.MaxIncPath" />
       <module name="DS" />
       <extension name="coverage">
         <pattern>
@@ -121,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxIncPath" />
         <item itemvalue="Application.Distinct" />
         <item itemvalue="Application.MinDepth" />
         <item itemvalue="Application.MaximumSumPath" />
         <item itemvalue="Application.FindLevel" />
-        <item itemvalue="Application.Ancestor" />
       </list>
     </recent_temporary>
   </component>
@@ -206,58 +201,62 @@
     <option name="LAST_COMMIT_MESSAGE" value="pushing as a back up..." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="135" key="#xdebugger.evaluate" timestamp="1589030149096">
+    <state x="485" y="135" key="#xdebugger.evaluate" timestamp="1589472487894">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state x="485" y="135" key="#xdebugger.evaluate/0.23.1440.829@0.23.1440.829" timestamp="1589030149096" />
+    <state x="485" y="135" key="#xdebugger.evaluate/0.23.1440.829@0.23.1440.829" timestamp="1589472487894" />
     <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1587647303255">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="362" y="29" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1587647303255" />
-    <state width="416" height="466" key="DebuggerActiveHint" timestamp="1589030076976">
+    <state width="423" height="466" key="DebuggerActiveHint" timestamp="1589472439333">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="416" height="466" key="DebuggerActiveHint/0.23.1440.829@0.23.1440.829" timestamp="1589030076976" />
-    <state width="1358" height="97" key="GridCell.Tab.0.bottom" timestamp="1589375222313">
+    <state width="423" height="466" key="DebuggerActiveHint/0.23.1440.829@0.23.1440.829" timestamp="1589472439333" />
+    <state width="1358" height="181" key="GridCell.Tab.0.bottom" timestamp="1589473309882">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="97" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589375222313" />
-    <state width="1358" height="97" key="GridCell.Tab.0.center" timestamp="1589375222312">
+    <state width="1358" height="181" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589473309882" />
+    <state width="1358" height="181" key="GridCell.Tab.0.center" timestamp="1589473309881">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="97" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1589375222312" />
-    <state width="1358" height="97" key="GridCell.Tab.0.left" timestamp="1589375222311">
+    <state width="1358" height="181" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
+    <state width="1358" height="181" key="GridCell.Tab.0.left" timestamp="1589473309881">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="97" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1589375222311" />
-    <state width="1358" height="97" key="GridCell.Tab.0.right" timestamp="1589375222312">
+    <state width="1358" height="181" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
+    <state width="1358" height="181" key="GridCell.Tab.0.right" timestamp="1589473309881">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="97" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1589375222312" />
-    <state width="1358" height="236" key="GridCell.Tab.1.bottom" timestamp="1589043715629">
+    <state width="1358" height="181" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
+    <state width="1358" height="181" key="GridCell.Tab.1.bottom" timestamp="1589473324807">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="236" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589043715629" />
-    <state width="1358" height="236" key="GridCell.Tab.1.center" timestamp="1589043715629">
+    <state width="1358" height="181" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589473324807" />
+    <state width="1358" height="181" key="GridCell.Tab.1.center" timestamp="1589473324806">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="236" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1589043715629" />
-    <state width="1358" height="236" key="GridCell.Tab.1.left" timestamp="1589043715629">
+    <state width="1358" height="181" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
+    <state width="1358" height="181" key="GridCell.Tab.1.left" timestamp="1589473324806">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="236" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1589043715629" />
-    <state width="1358" height="236" key="GridCell.Tab.1.right" timestamp="1589043715629">
+    <state width="1358" height="181" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
+    <state width="1358" height="181" key="GridCell.Tab.1.right" timestamp="1589473324806">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1358" height="236" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1589043715629" />
+    <state width="1358" height="181" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
     <state x="340" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587647306315">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="340" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1587647306315" />
-    <state x="394" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1589374912555">
+    <state x="394" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1589459523214">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state x="394" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1589374912555" />
+    <state x="394" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1589459523214" />
+    <state x="428" y="47" key="refactoring.ChangeSignatureDialog" timestamp="1589463727906">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="428" y="47" key="refactoring.ChangeSignatureDialog/0.23.1440.829@0.23.1440.829" timestamp="1589463727906" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,6 +275,21 @@
           <url>file://$PROJECT_DIR$/src/BT/MaximumSumPath.java</url>
           <line>80</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BT/MaxIncPath.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BT/MaxIncPath.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BT/MaxIncPath.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
