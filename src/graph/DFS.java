@@ -17,28 +17,28 @@ public class DFS {
         boolean[] visitedArray = initVisitedArray(n);
         int[][] edges = initGraph(n, e);
 
-        printVertex(edges, 0, n, visitedArray);
+        printVertex(edges, 1, n, visitedArray);
     }
 
     private static boolean[] initVisitedArray(int noOfVertex){
-        boolean[] visitedArray = new boolean[noOfVertex];
-        for(int i = 0; i < noOfVertex; i++){
+        boolean[] visitedArray = new boolean[noOfVertex+1];
+        for(int i = 1; i <= noOfVertex; i++){
             visitedArray[i] = false;
         }
         return visitedArray;
     }
 
     private static int[][] initGraph(int noOfVertex, int noOfEdges){
-        int[][] edges = new int[noOfVertex][noOfVertex];
+        int[][] edges = new int[noOfVertex+1][noOfVertex+1];
 
-        for(int i = 0; i < noOfVertex; i++){
-            edges[i] = new int[noOfVertex];
-            for(int j = 0; j < noOfVertex; j++){
+        for(int i = 1; i <= noOfVertex; i++){
+            edges[i] = new int[noOfVertex+1];
+            for(int j = 1; j <= noOfVertex; j++){
                 edges[i][j] = 0;
             }
         }
 
-        for(int i = 0; i < noOfEdges; i++){
+        for(int i = 1; i <= noOfEdges; i++){
             int u = in.nextInt();
             int v = in.nextInt();
             edges[u][v] = 1;
@@ -51,7 +51,7 @@ public class DFS {
     private static void printVertex(int[][] edges, int sv, int noOfVertex, boolean[] visitedArray){
         System.out.print(sv+" ");
         visitedArray[sv] = true;
-        for (int i = 0; i < noOfVertex; i++){
+        for (int i = 1; i <= noOfVertex; i++){
             if(sv == i){
                 continue;
             }

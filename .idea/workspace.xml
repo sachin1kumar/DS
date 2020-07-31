@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="570879d4-de7e-433a-bf83-d3c08544f973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BT/MaxIncPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/DayOfProgrammer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS/META-INF/DS.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS/META-INF/DS.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -28,16 +32,28 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.MaxIncPath">
-    <configuration name="Distinct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.Distinct" />
+  <component name="RunManager" selected="Application.DayOfProgrammer">
+    <configuration name="DFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.DFS" />
+      <module name="DS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DayOfProgrammer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.DayOfProgrammer" />
       <module name="DS" />
       <extension name="coverage">
         <pattern>
@@ -49,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT.FindLevel" />
+    <configuration name="IsTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.IsTree" />
       <module name="DS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BT.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxIncPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT.MaxIncPath" />
+    <configuration name="TwelveToTwentyFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.TwelveToTwentyFour" />
       <module name="DS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BT.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,33 +91,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumSumPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT.MaximumSumPath" />
+    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="DS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="test.TestKt" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinDepth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BT.MinDepth" />
-      <module name="DS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="DS" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -116,26 +119,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaxIncPath" />
-        <item itemvalue="Application.Distinct" />
-        <item itemvalue="Application.MinDepth" />
-        <item itemvalue="Application.MaximumSumPath" />
-        <item itemvalue="Application.FindLevel" />
+        <item itemvalue="Application.DayOfProgrammer" />
+        <item itemvalue="Kotlin.TestKt" />
+        <item itemvalue="Application.TwelveToTwentyFour" />
+        <item itemvalue="Application.IsTree" />
+        <item itemvalue="Application.DFS" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,7 +181,84 @@
       <option name="project" value="LOCAL" />
       <updated>1587647303485</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pushing as a back up...">
+      <created>1590902927741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590902927741</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pushing as a back up...">
+      <created>1590921828980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590921828980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Binary tree problem">
+      <created>1591533764568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591533764569</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Binary tree problem">
+      <created>1591535154709</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591535154709</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Binary tree largest element problem">
+      <created>1592055210660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592055210660</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Binary tree DiagonalAnagram problem coding ninjas.&#10;https://codezen.codingninjas.com/practice/499/1966/diagonal-anagrams">
+      <created>1592238865721</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592238865721</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Reverse Blocks&#10;https://codezen.codingninjas.com/practice/469/1939/reverse-blocks">
+      <created>1592587658355</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592587658355</updated>
+    </task>
+    <task id="LOCAL-00014" summary="AppendNodes&#10;https://codezen.codingninjas.com/practice/469/1953/append-nodes">
+      <created>1592661606177</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592661606177</updated>
+    </task>
+    <task id="LOCAL-00015" summary="coding ninjas color graph problem.">
+      <created>1594054906694</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594054906694</updated>
+    </task>
+    <task id="LOCAL-00016" summary="DFS algo">
+      <created>1594124819086</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594124819086</updated>
+    </task>
+    <task id="LOCAL-00017" summary="time conversion hackerrank">
+      <created>1596015634273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596015634273</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,65 +267,96 @@
     <MESSAGE value="creating graph..." />
     <MESSAGE value="insertion linkedlist problem" />
     <MESSAGE value="pushing as a back up..." />
-    <option name="LAST_COMMIT_MESSAGE" value="pushing as a back up..." />
+    <MESSAGE value="Binary tree problem" />
+    <MESSAGE value="Binary tree largest element problem" />
+    <MESSAGE value="Binary tree DiagonalAnagram problem coding ninjas." />
+    <MESSAGE value="Binary tree DiagonalAnagram problem coding ninjas.&#10;https://codezen.codingninjas.com/practice/499/1966/diagonal-anagrams" />
+    <MESSAGE value="Reverse Blocks&#10;https://codezen.codingninjas.com/practice/469/1939/reverse-blocks" />
+    <MESSAGE value="AppendNodes&#10;https://codezen.codingninjas.com/practice/469/1953/append-nodes" />
+    <MESSAGE value="coding ninjas color graph problem." />
+    <MESSAGE value="DFS algo" />
+    <MESSAGE value="time conversion hackerrank" />
+    <option name="LAST_COMMIT_MESSAGE" value="time conversion hackerrank" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="135" key="#xdebugger.evaluate" timestamp="1589472487894">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="485" y="122" key="#xdebugger.evaluate" timestamp="1593084109515">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="485" y="135" key="#xdebugger.evaluate/0.23.1440.829@0.23.1440.829" timestamp="1589472487894" />
-    <state x="362" y="29" key="CommitChangelistDialog2" timestamp="1587647303255">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="485" y="122" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1593084109515" />
+    <state x="485" y="135" key="#xdebugger.evaluate/0.23.1440.829@0.23.1440.829" timestamp="1590906085842" />
+    <state x="362" y="23" key="CommitChangelistDialog2" timestamp="1596015634058">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="362" y="29" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1587647303255" />
-    <state width="423" height="466" key="DebuggerActiveHint" timestamp="1589472439333">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="362" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596015634058" />
+    <state x="362" y="29" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1590921828803" />
+    <state width="510" height="506" key="DebuggerActiveHint" timestamp="1594141283046">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="423" height="466" key="DebuggerActiveHint/0.23.1440.829@0.23.1440.829" timestamp="1589472439333" />
-    <state width="1358" height="181" key="GridCell.Tab.0.bottom" timestamp="1589473309882">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="510" height="506" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1594141283046" />
+    <state width="444" height="506" key="DebuggerActiveHint/0.23.1440.829@0.23.1440.829" timestamp="1594106445131" />
+    <state width="1398" height="100" key="GridCell.Tab.0.bottom" timestamp="1596200028523">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589473309882" />
-    <state width="1358" height="181" key="GridCell.Tab.0.center" timestamp="1589473309881">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="100" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596200028523" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1591549156064" />
+    <state width="1398" height="100" key="GridCell.Tab.0.center" timestamp="1596200028521">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
-    <state width="1358" height="181" key="GridCell.Tab.0.left" timestamp="1589473309881">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="100" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596200028521" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1591549156063" />
+    <state width="1398" height="100" key="GridCell.Tab.0.left" timestamp="1596200028520">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
-    <state width="1358" height="181" key="GridCell.Tab.0.right" timestamp="1589473309881">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="100" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596200028520" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1591549156063" />
+    <state width="1398" height="100" key="GridCell.Tab.0.right" timestamp="1596200028522">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1589473309881" />
-    <state width="1358" height="181" key="GridCell.Tab.1.bottom" timestamp="1589473324807">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="100" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596200028522" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1591549156064" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1594143842547">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1589473324807" />
-    <state width="1358" height="181" key="GridCell.Tab.1.center" timestamp="1589473324806">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594143842547" />
+    <state width="1358" height="254" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1590946862512" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1594143842547">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
-    <state width="1358" height="181" key="GridCell.Tab.1.left" timestamp="1589473324806">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594143842547" />
+    <state width="1358" height="254" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1590946862511" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1594143842546">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
-    <state width="1358" height="181" key="GridCell.Tab.1.right" timestamp="1589473324806">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594143842546" />
+    <state width="1358" height="254" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1590946862510" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1594143842547">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="181" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1589473324806" />
-    <state x="340" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587647306315">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594143842547" />
+    <state width="1358" height="254" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1590946862511" />
+    <state x="570" y="167" key="RollbackChangesDialog" timestamp="1594125100084">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="340" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1587647306315" />
-    <state x="394" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1589459523214">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="570" y="167" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1594125100084" />
+    <state x="340" y="154" key="Vcs.Push.Dialog.v2" timestamp="1596015635896">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="394" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1589459523214" />
-    <state x="428" y="47" key="refactoring.ChangeSignatureDialog" timestamp="1589463727906">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state x="340" y="154" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596015635896" />
+    <state x="340" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1590921830822" />
+    <state x="394" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1594104882453">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="394" y="258" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1594104882453" />
+    <state x="394" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1591028558999" />
+    <state x="428" y="26" key="refactoring.ChangeSignatureDialog" timestamp="1594140780663">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="428" y="26" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1594140780663" />
     <state x="428" y="47" key="refactoring.ChangeSignatureDialog/0.23.1440.829@0.23.1440.829" timestamp="1589463727906" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1594140764077">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1594140764077" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +390,71 @@
           <url>file://$PROJECT_DIR$/src/BT/MaxIncPath.java</url>
           <line>56</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/MaxProd.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/MaxProd.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BT/LargestNumBT.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BT/LargestNumBT.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/ReverseBlocks.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/AppendNodes.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/AppendNodes.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/RemoveString.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linkedlist/RemoveString.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/IsTree.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/DFS.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/DFS.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/IsTree.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
