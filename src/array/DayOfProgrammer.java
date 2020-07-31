@@ -26,7 +26,6 @@ public class DayOfProgrammer {
                 diff = 256 - noOfNonLeapDays;
             }
         }
-
         return convertToString(diff, year);
     }
 
