@@ -1,4 +1,4 @@
-package lruccache;
+package lrucache;
 
 import java.util.HashSet;
 

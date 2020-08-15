@@ -1,6 +1,4 @@
-package lruccache;
-
-import java.util.HashSet;
+package lrucache;
 
 public class DoublyLinkedList {
 
