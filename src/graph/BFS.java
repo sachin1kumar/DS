@@ -1,11 +1,10 @@
 package graph;
 
-import stack.Stack;
-
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
-//With Stack data structure.
-public class DFS {
-
+//With queue data structure.
+public class BFS {
     private static Scanner in;
     public static void main(String[] args) {
         in = new Scanner(System.in);
@@ -51,25 +50,24 @@ public class DFS {
     }
 
     private static void printVertex(int[][] edges, int sv, int noOfVertex, boolean[] visitedArray){
-        Stack stack = new Stack();
-        stack.pushElement(sv);
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(sv);
         visitedArray[sv] = true;
 
-        while (!stack.isEmpty()) {
-            int currentVertex = stack.topElement();
+        while (!queue.isEmpty()) {
+            int currentVertex = queue.peek();
             System.out.print(currentVertex+" ");
-            stack.popElement();
+            queue.poll();
 
             for(int i = 0; i < noOfVertex; i++) {
                 if(currentVertex == i) {
                     continue;
                 }
                 if (edges[currentVertex][i] == 1 && !visitedArray[i]) {
-                    stack.pushElement(i);
+                    queue.add(i);
                     visitedArray[i] = true;
                 }
             }
         }
     }
-
 }
