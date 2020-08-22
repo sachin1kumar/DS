@@ -14,6 +14,7 @@ public class Kruskal {
         int v = scanner.nextInt();
         Edge[] edges = createEdges(e);
         ArrayList<Edge> output = createOutputMST(edges, v);
+
         //print output
         for (int i = 0; i < output.size(); i++) {
             System.out.println(output.get(i).getS()+" "+output.get(i).getD()+" "+output.get(i).getW());
