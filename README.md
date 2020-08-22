@@ -1,6 +1,6 @@
 # DS
 
-This repository contains all the data structures implementations and Hackerrank problems' solutions.
+This repository contains all the data structure implementations and Hackerrank problems' solutions.
 
 ## Data Structures it contains:
 1. Array
