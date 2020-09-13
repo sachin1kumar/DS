@@ -6,7 +6,7 @@ fun main() {
     // 2 1 1 3 2
     //Smaller the number, higher the priority..
     val elements: HashMap<Char, Int> =  initCollection()
-    //In this problem taking  total priorities equals to 3..
+    //In this problem taking total priority equals to 3..
     val totalPriority = 3
     //Here, we are going to create 3 Queues as we have total 3 priorities defined and hence, here ArrayLists represents Queues which
     //are mapped with int priorities.
