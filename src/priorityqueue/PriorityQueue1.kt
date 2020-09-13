@@ -40,7 +40,7 @@ private fun createHashMapWithQueues(totalPriority: Int): HashMap<Int, ArrayList<
     return map
 }
 
-fun insertion(mapWithQueues: HashMap<Int, ArrayList<Char>?>, elements: HashMap<Char, Int>): HashMap<Int, ArrayList<Char>?> {
+private fun insertion(mapWithQueues: HashMap<Int, ArrayList<Char>?>, elements: HashMap<Char, Int>): HashMap<Int, ArrayList<Char>?> {
     //iterate elements HashMap...
     for (element in elements.entries) {
         val priority = element.value
@@ -66,7 +66,7 @@ fun insertion(mapWithQueues: HashMap<Int, ArrayList<Char>?>, elements: HashMap<C
     return mapWithQueues
 }
 
-fun printMapContainingQueue(modifiedMap: HashMap<Int, ArrayList<Char>?>) {
+private fun printMapContainingQueue(modifiedMap: HashMap<Int, ArrayList<Char>?>) {
     for (element in modifiedMap.entries) {
         val priority = element.key
         val queueData = element.value
