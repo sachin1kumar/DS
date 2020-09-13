@@ -19,6 +19,7 @@ fun main() {
     //Q1: B C
     //Q2: A E
     //Q3: D
+    //If we try to delete the elements from this Queue, first priority will be given from Q1 to Q3.
 }
 
 private fun initCollection(): HashMap<Char, Int> {
