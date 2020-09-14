@@ -1,5 +1,6 @@
 package priorityqueue
 
+//Queue with limited priorities..
 fun main() {
     //Here, we have the following input having elements with priority like:
     // A B C D E
