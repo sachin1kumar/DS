@@ -18,7 +18,6 @@ fun main() {
 
     //2. Delete the element from the first index.. Time complexity O(1)..
     list.removeAt(0)
-
     //print the updated list
     for (index in list.indices) {
         print("${list[index]} ")
