@@ -54,8 +54,6 @@ public class SortDateArray {
         }
     }
 
-    private
-
     static class CustomComparator implements Comparator<Date> {
         @Override
         public int compare(Date o1, Date o2) {
