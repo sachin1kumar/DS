@@ -29,8 +29,8 @@ public class AmazonProb {
 
         //print out
         int sum = 0;
-        for (int j = 0; j < res.size(); j++) {
-            sum += res.get(j);
+        for (Integer re : res) {
+            sum += re;
         }
 
         System.out.println(sum);
