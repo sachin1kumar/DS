@@ -14,17 +14,18 @@ fun main() {
     var j = inputArray.size - 1
 
     while (true) {
-        //keep on increment i..
+        //keep on incrementing i..
         while (i < j && inputArray[i] < 0) {
             i++
         }
 
-        //Keep on decrement j..
+        //Keep on decrementing j..
         while (i < j && inputArray[j] > 0) {
             j--
         }
 
         if (i < j) {
+            //swap two numbers..
             val temp = inputArray[i]
             inputArray[i] = inputArray[j]
             inputArray[j] = temp
