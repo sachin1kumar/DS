@@ -40,5 +40,58 @@ fun main() {
     for (element in inputArray) {
         print("$element ")
     }
+    println()
+
+    val inputArray2 = intArrayOf(12, 11, -13, -5, 6, -7, 5, -3, -6)
+    separateMyCustomMethod(inputArray2)
+}
+
+private fun separateMyCustomMethod(input: IntArray) {
+    var i = 0
+    var j = input.size - 1
+
+    while (i < j) {
+        if (input[i] < 0 && input[j] > 0) {
+            val temp = input[i]
+            input[i] = input[j]
+            input[j] = temp
+            i++
+            j--
+        }
+        if (input[i] > 0) {
+            i++
+        }
+
+        if (input[j] < 0) {
+            j--
+        }
+    }
+
+    //print output..
+    for (element in input) {
+        print("$element ")
+    }
+    println()
+    println(i)
+
+    rearrange(input, i)
+
+}
+
+private fun rearrange(input: IntArray, splitIndex: Int) {
+    var start = 0
+    var splitIndex = splitIndex
+    while (splitIndex < input.size) {
+        val temp = input[start]
+        input[start] = input[splitIndex]
+        input[splitIndex] = temp
+        splitIndex++
+        start += 2
+    }
+
+    //print output..
+    for (element in input) {
+        print("$element ")
+    }
 
 }
