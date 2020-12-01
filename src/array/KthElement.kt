@@ -11,7 +11,7 @@ fun main() {
 
     //It is using min heap approach with time complexity O(1)..
     // 7 10 4 3, then when the size of heap exceeds four then 3 will be removed and then 4 will be removed and
-    // eventually it will return us 7 as the smallest in the heap..
+    // eventually it will return us 7..
     for (index in 0 until input.size) {
         priorityQueue.add(input[index])
         if (priorityQueue.size > k) {
