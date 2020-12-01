@@ -9,7 +9,7 @@ fun main() {
     //finding kth largest...
     val k = 3
 
-    //It is using min heap approach with time complexity O(1)..
+    //It is using min heap approach with time complexity O(n)..
     // 7 10 4 3, then when the size of heap exceeds four then 3 will be removed and then 4 will be removed and
     // eventually it will return us 7 as it is top elemtn in the heap..
     // sequence will be:
