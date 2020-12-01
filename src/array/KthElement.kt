@@ -22,7 +22,7 @@ fun main() {
     // 7 10 20
     // 7 10 15 20
     // 10 15 20
-    // 15 20 -> 10 has hot removed and printed outside the for loop..
+    // 15 20 -> 10 has got removed and printed outside the for loop..
     for (index in 0 until input.size) {
         priorityQueue.add(input[index])
         if (priorityQueue.size > k) {
