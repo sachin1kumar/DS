@@ -1,6 +1,8 @@
 package array
 
 import java.util.*
+import java.util.PriorityQueue
+
 
 fun main() {
     val input = intArrayOf(7, 10, 4, 3, 20, 15)
@@ -31,4 +33,30 @@ fun main() {
     }
 
     print(priorityQueue.remove())
+    println()
+
+    //for finding kth smallest in the array..
+    smallest(input)
+}
+
+private fun smallest(input: IntArray) {
+    var priorityQueue = PriorityQueue<Int>()
+    val k = 5
+    for (index in 0 until input.size) {
+        priorityQueue.add(input[index])
+        if (priorityQueue.size > k) {
+            priorityQueue = removeLast(priorityQueue)
+        }
+    }
+    println(priorityQueue.elementAt(priorityQueue.size - 1))
+}
+
+//For finding kth smallest remove the last element from queue.
+private fun removeLast(pq: PriorityQueue<Int>): PriorityQueue<Int> {
+    var pqnew = PriorityQueue<Int>()
+    while (pq.size > 1) {
+        pqnew.add(pq.poll())
+    }
+    pq.clear()
+    return pqnew
 }
