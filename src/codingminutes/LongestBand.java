@@ -71,11 +71,11 @@ public class LongestBand {
             if (set.contains(input[index] - 1)) {
                 continue;
             } else {
-                int j = index;
+                int nextNum = input[index];
                 int count = 1;
-                while (j < length - 1 && set.contains(input[j] + 1)) {
+                while (set.contains(nextNum+ 1)) {
                     count++;
-                    j++;
+                    nextNum++;
                 }
                 longest = Math.max(longest, count);
             }
