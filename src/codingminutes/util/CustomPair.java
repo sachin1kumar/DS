@@ -1,8 +1,12 @@
 package codingminutes.util;
 
 public class CustomPair implements Comparable<CustomPair> {
-    private final int key;
-    private final int value;
+    private int key;
+    private int value;
+
+    public CustomPair() {
+
+    }
 
     public CustomPair(int key, int value) {
         this.key = key;
@@ -33,5 +37,13 @@ public class CustomPair implements Comparable<CustomPair> {
                 "key=" + key +
                 ", value=" + value +
                 '}';
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
     }
 }
