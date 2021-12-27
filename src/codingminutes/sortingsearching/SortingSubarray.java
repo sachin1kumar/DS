@@ -24,19 +24,15 @@ public class SortingSubarray {
         int secondSubIndex = -1;
         list.add(firstSubIndex);
         list.add(secondSubIndex);
-
         int length  = input.length;
-
         if (length == 1) {
             return list;
         }
-
         if (length == 2 && input[1] < input[0]) {
             list.set(0, 0);
             list.set(1, 1);
             return list;
         }
-
         for (int index = 2; index < input.length; index++) {
             if (input[index] < input[index - 1]) {
                 secondSubIndex = index;
@@ -50,7 +46,6 @@ public class SortingSubarray {
                 break;
             }
         }
-
         list.set(0, firstSubIndex);
         list.set(1, secondSubIndex);
         return list;
