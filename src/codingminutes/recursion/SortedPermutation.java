@@ -20,7 +20,7 @@ public class SortedPermutation {
             return;
         }
 
-        for (int index_  = index; index_ < input.length(); index_++) {
+        for (int index_ = index; index_ < input.length(); index_++) {
             swap(input, index, input.charAt(index), index_, input.charAt(index_));
             printPermutation(input, index + 1);
             swap(input, index, input.charAt(index), index_, input.charAt(index_));
