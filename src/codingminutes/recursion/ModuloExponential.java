@@ -5,6 +5,7 @@ public class ModuloExponential {
     public static void main(String[] args) {
         System.out.println(exponential(5, 3));
         System.out.println(fastExponential(3978432, 5, 1000000007));
+        System.out.println(fastExpoRec(1, 3978432, 5, 1000000007));
     }
 
     /*
@@ -36,5 +37,20 @@ public class ModuloExponential {
             b = b >> 1;
         }
         return res;
+    }
+
+    private static long fastExpoRec(long res, long a, long b, long n) {
+        if (b == 0) {
+            return  res;
+        }
+
+        if ((b & 1) != 0) {
+            res = (res % n * a % n) % n;
+        }
+
+        a = (a % n * a % n) % n;
+        b = b >> 1;
+
+        return fastExpoRec(res, a, b, n);
     }
 }
