@@ -37,16 +37,4 @@ public class LinkedListMid {
 
         return slow;
     }
-
-    private static void printList(LinkedList head) {
-        if (head == null) {
-            System.out.println("Empty List");
-        }
-        LinkedList temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
 }
