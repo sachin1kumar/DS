@@ -14,12 +14,10 @@ public class StockSpan {
     private static int[] getSpan(int[] stockPrices, int size) {
         Stack<Integer> stack = new Stack<>();
         int[] span = new int[size];
-
         if (size > 0) {
             stack.push(0);
             span[0] = 1;
         }
-
         for (int index = 1; index < size; index++) {
             if (stockPrices[stack.peek()] > stockPrices[index]) {
                 span[index] = index - stack.peek();
