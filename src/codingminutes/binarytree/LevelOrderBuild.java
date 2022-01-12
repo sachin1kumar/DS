@@ -9,7 +9,10 @@ public class LevelOrderBuild {
 
     public static void main(String[] args) {
         int[] input = {1, 2, 3, 4, 5, -1, 6, -1, -1, 7, -1, -1, -1, -1, -1};
-        BinaryTreeUseKt.levelWisePrint(getLevelOrderTree(input));
+        BT.BinaryTree root = getLevelOrderTree(input);
+        BinaryTreeUseKt.levelWisePrint(root);
+        System.out.println("----------");
+        printAtLevelK(root, 2);
     }
 
     private static BT.BinaryTree getLevelOrderTree(int[] input) {
@@ -42,5 +45,16 @@ public class LevelOrderBuild {
             index++;
         }
         return root;
+    }
+
+    private static void printAtLevelK(BT.BinaryTree root, int k) {
+        if (root == null) {
+            return;
+        }
+        if (k == 0) {
+            System.out.println(root.getData());
+        }
+        printAtLevelK(root.getLeft(), k -1);
+        printAtLevelK(root.getRight(), k -1);
     }
 }
