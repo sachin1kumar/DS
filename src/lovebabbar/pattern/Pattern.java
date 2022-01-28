@@ -1,4 +1,4 @@
-package lovebabbar;
+package lovebabbar.pattern;
 
 public class Pattern {
 
