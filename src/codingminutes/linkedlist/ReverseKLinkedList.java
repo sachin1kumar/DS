@@ -31,26 +31,26 @@ public class ReverseKLinkedList {
         if (head.next == null) {
             return head;
         }
-        //reverse first k node iteratively.
+        //first reverse first k node iteratively.
         int count = 1;
         LinkedList temp = head;
-        LinkedList ptr = null;
+        LinkedList prev = null;
         LinkedList temp_ = null;
 
         while (temp != null && count <= k) {
             temp_ = temp.next;
-            temp.next = ptr;
-            ptr = temp;
+            temp.next = prev;
+            prev = temp;
             temp = temp_;
             count++;
         }
-        //call recursion for next k codes and reverse them.
-        //No connect the two reversed lists.
-        //here head is the last pointer of first reversed node.
+        //Now, call recursion for next k codes and reverse them.
+        //Now connect the two reversed lists.
+        //here head is the last node in the first k reversed nodes.
         if (temp_ != null) {
             head.next = reverseKRecursively(temp_, k);;
         }
-        return ptr;
+        return prev;
     }
 
     private static void printList(LinkedList head) {
