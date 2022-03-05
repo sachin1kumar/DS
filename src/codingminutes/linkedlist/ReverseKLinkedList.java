@@ -33,7 +33,7 @@ public class ReverseKLinkedList {
         }
         //first reverse first k node iteratively.
         int count = 1;
-        LinkedList temp = head;
+        LinkedList temp = head; //we can take temp as current as well.
         LinkedList prev = null;
         LinkedList temp_ = null;
 
