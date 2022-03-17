@@ -16,14 +16,11 @@ public class FirstNegativeIntegerInWindow {
 
     private static List<Integer> getNegativeNumberInWindows(int[] input, int k) {
         final List<Integer> list = new ArrayList<>();
-
         if (input.length == 0) {
             return list;
         }
-
         int j = 0;
         final Queue<Integer> queue = new LinkedList<>();
-
         for (int i = 0; i < input.length; i++) {
             j = i;
             if (((input.length-1) - i) + 1 < k) {
